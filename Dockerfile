@@ -9,6 +9,7 @@ RUN apt-get update \
         libffi-dev \
         libssl-dev \
         git \
+        golang-go \ # Add Go installation here
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
     && python -m venv /opt/venv
